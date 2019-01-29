@@ -1,0 +1,368 @@
+
+//= Test Driven Development
+
+:imagesdir: ./images
+:customcss: ./css/fullscreen.css
+
+// Pour avoir un comportement spécifique sur le PDF
+// ifdef::backend-pdf[]
+// endif::[]
+
+//
+// <<<
+
+[%notitle]
+== TDD
+
+ifndef::backend-pdf[]
+image::schema.svg[background,size=600px]
+
+*Test*
+
+*Driven*
+
+*Development*
+endif::[]
+
+ifdef::backend-pdf[]
+*Test*
+*Driven*
+*Development*
+endif::[]
+
+<<<
+
+// [%notitle]
+// == TDD
+//
+// image::tdd2.png[height=600]
+//
+// <<<
+
+== TDD
+
+* Le sujet principal n’est pas le test
+* Développement guidé par les exemples
+
+<<<
+
+== Kent Beck
+
+[cols='1,1,2a']
+|====
+|
+| image:kent_beck.jpg["Kent Beck",height=350]
+| * Extreme programming
+* Test-driven development
+* Design patterns
+* CRC cards
+* JUnit
+* Manifeste agile
+|====
+
+<<<
+
+== Préface
+
+[cols='1,2a']
+|====
+| image:test_driven_development_by_example.jpg["TDD by example",height=300]
+| * N’écrivez pas une ligne de code tant que vous n’avez pas d’abord un test automatique qui échoue
+* Eliminez la duplication
+|====
+
+<<<
+
+== TDD mantra
+
+image::mantra.png[width=600, align="center"]
+
+<<<
+
+== Un exemple
+* Une calculatrice gérant l’addition de plusieurs
+entiers
+
+
+<<<
+
+== Concepts clés
+
+* Ecrire un test et s’assurer qu’il échoue
+** Les valeurs en « dur » orientent le test suivant
+* Ecrire « du » code pour satisfaire le test
+** Passer rapidement au vert
+** Implémentation rapide
+* Ecrire « le » code que l’on va garder
+** Renommage, restructuration
+** Changement d’implémentation
+
+<<<
+
+[%notitle]
+== Questions
+
+image::questions.png[height=600]
+
+<<<
+
+== Premier exercice - FizzBuzz
+
+* Le programme FizzBuzz retourne le nombre qu’on lui donne et qui est compris entre 1 et 100
+* Si le nombre est un multiple de 3, retourner Fizz
+* Si le nombre est un multiple de 5, retourner Buzz
+* Pour les nombres multiple de 3 et de 5, retourner FizzBuzz
+* Dans les autres cas, on retourne le nombre
+
+<<<
+
+== Rétrospective
+
+image::retrospective.png[height=500]
+
+<<<
+
+== Points d’attention
+
+* Se focaliser sur le comportement/besoin et non la manière
+* Penser utilisation avant implémentation
+* Ne pas modifier le test et le code en même temps
+* Prendre autant soin des tests que du code
+
+<<<
+
+== Bonnes pratiques de test
+
+* Indépendance
+* Rapidité d’exécution
+* Reproductibilité
+* Lisibilité
+* Tester une seule chose à la fois
+* Le nom du test indique l’objectif
+
+<<<
+
+== Outillage
+* Junit, TestNG
+* Maven, Ant
+* Eclipse, IntelliJ, NetBean
+* Jenkins, Travis CI, GitLab CI
+* Cobertura, Emma
+* Sonar, Checkstyle, PMD, ...
+* MoreUnit, Inifinitest
+
+<<<
+
+== Spécification / Documentation
+
+* Spécification exécutable
+** Code lisible
+** Indépendant de l’implémentation
+* Documentation à jour
+** Exemple d’utilisation du code
+** Spécification du comportement
+
+<<<
+
+== Concepts agiles
+
+* KISS (Keep It simple, stupid)
+** On commence par une implémentation triviale
+** On restructure pour simplifier
+* YAGNI (You Ain't Gonna Need It)
+** On ne développe que ce qui est nécessaire pour faire passer un test
+** On écrit un test que pour décrire un cas utilisateur
+
+<<<
+
+== Feedback
+
+* Baby steps
+** Approche itérative très courte
+* Feedback
+** Retour immédiat
+
+<<<
+
+== Mesure de la couverture
+
+* La couverture est assurée par construction
+* On ne s’en préoccupe pas spécialement
+
+<<<
+
+== Qualité de code
+
+* Refactoring
+** Modification de l’implémentation sans changer le comportement
+** Elimination de la duplication
+** Amélioration de l’implémentation
+
+<<<
+
+== BDD: Behavior Driven Development
+
+* Continuité du TDD
+* Encore plus orienté vers le métier
+* Rédaction en collaboration avec le métier
+* Syntaxe Gerkhin: Given / When / Then
+
+[cols="1,1a,1"]
+|====
+|
+|....
+Scénario: Compléter toute ma todo liste
+  Etant donné que j’ai 2 tâches dans ma todo liste
+  Lorsque je complète toutes mes tâches
+  Alors ma todo liste est vide
+....
+|
+|====
+
+<<<
+
+== Second exercice
+
+* Bowling Game
+* Game of life
+//* Bank OCR
+* How much water ?
+* Tennis score
+
+<<<
+
+== Score de bowling
+
+** Le jeu est constitué de 10 cadres.
+** Pour chaque cadre, le joueur à deux opportunités de faire tomber les 10 quilles.
+** Le score du cadre est le nombre de quilles tombées plus un bonus en cas de spare ou de strike.
+** Il y a spare lorsque qu’un joueur fait tomber toutes les quilles en deux coups. Le bonus est le nombre de quilles tombées au coup suivant
+** Il y a strike lorsque toutes les quilles tombent au premier essai. Le bonus est le score des deux coups suivants.
+
+image:bowling.png[width=1000]
+
+<<<
+
+== Le jeu de la vie: John conway
+
+* *Pour un emplacement ‘peuplé':*
+** Une cellule avec un ou aucun voisin meurt de solitude.
+** Une cellule avec quatre voisins ou plus meurt de surpopulation.
+** Une cellule avec deux ou trois voisins survit.
+* *Pour un emplacement ‘vide’ ou ‘non peuplé’*
+** Une cellule avec trois voisins devient peuplée.
+
+image:gameoflife.png[width=1000]
+
+<<<
+
+// == OCR Bank
+//
+// ....
+//     _  _     _  _  _  _  _
+//   | _| _||_||_ |_   ||_||_|
+//   ||_  _|  | _||_|  ||_| _|
+// ....
+// * Une entrée est composée de 4 lignes de 3 caractères chacune.
+// * Les 3 premières lignes forment un numéro et la 4ème est une ligne vide.
+// * Chaque numéro est composé de 9 chiffres.
+// * Vous devez décoder le texte pour extraire le numéro (ici: 123456789)
+//
+// <<<
+
+== How much water ?
+
+* Etant donnée une liste d'entiers représentant les hauteurs de colonnes
+* On cherche la quantité d’eau qui resterait prisonnière des cuvettes formées par les colonnes
+
+[cols='1,3a']
+|====
+.2+| image:water.jpg[width=400]
+| * Exemple :
+** Valeurs: 2, 5, 1, 3, 1, 2, 1, 7, 7, 6
+** Résultat: 17
+|====
+
+<<<
+
+== Tennis score
+
+* Afficher le score d'un match de tennis
+* On donne une suite indiquant qui a marqué chaque point et on retourne le score
+* Exemple
+** Entrée: AAABABBAB...
+** Sortie:
+
+[cols="2,1,1,1,1,2"]
+|====
+| | Joueur | Set | Jeu | Point |
+| | A | 2 | 4 | 40 |
+| | B | 1 | 5 | 15 |
+|====
+
+<<<
+
+== Rétrospective
+
+image::retrospective.png[height=500]
+
+<<<
+
+== Les points difficiles
+
+* Les méthodes privées
+* Les contributeurs
+* Rester indépendant de l’implémentation
+* Tester sur du code existant
+* Conception émergente
+
+<<<
+
+== Bénéfices
+
+* Composants prévus pour être testés
+* Composants prévus pour être réutilisés
+* Capacité à faire évoluer/modifier le code
+* On sait ce qui marche ou pas
+* Projet auto validé
+* Rapidité d’analyse des défauts
+
+<<<
+
+== Bénéfices
+
+* Le tests ne sont plus une option "lorsqu’il reste du temps"
+* On ne perd pas du temps à écrire les tests, on gagne du temps pour écrire le code
+
+<<<
+
+== Références
+
+[,  "Kent Beck. Addison-Wesley, 1999"]
+""
+Extreme programming explained: embrace change.
+""
+
+[, "Kent Beck. Addison-Wesley, 2002"]
+""
+Test-Driven Development: By Example
+""
+
+[, "David Astels. Prentice Hall, 2003"]
+""
+Test-Driven Development: A Practical Guide
+""
+
+[, "Steve Freeman, Nat Pryce, 2009"]
+""
+Growing Object-Oriented Software, Guided by Tests
+""
+
+<<<
+
+== Sites
+
+* Cyber dojo: http://cyber-dojo.org/
+* CodingDojo: http://codingdojo.org/kata/
+* Yosethegame: http://yosethegame.com/
+* Coding Game: https://www.codingame.com/start
