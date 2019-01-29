@@ -1,5 +1,11 @@
 font:
   catalog:
+
+    Montserrat:
+      normal: /documents/content/themes/font/Montserrat/Montserrat-Regular.ttf
+      bold: /documents/content/themes/font/Montserrat/Montserrat-SemiBold.ttf
+      italic: /documents/content/themes/font/Montserrat/Montserrat-Italic.ttf
+      bold_italic: /documents/content/themes/font/Montserrat/Montserrat-SemiBoldItalic.ttf
     # Noto Serif supports Latin, Latin-1 Supplement, Latin Extended-A, Greek, Cyrillic, Vietnamese & an assortment of symbols
     Noto Serif:
       normal: notoserif-regular-subset.ttf
@@ -38,8 +44,9 @@ base:
   # color as CMYK array (approximated)
   #font_color: [0, 0, 0, 0.92]
   #font_color: [0, 0, 0, 92%]
-  font_family: Noto Serif
-  font_size: 20
+  #font_family: Noto Serif
+  font_family: Montserrat
+  font_size: 24
   line_height_length: 25
   line_height: $base_line_height_length / $base_font_size
   font_size_large: round($base_font_size * 1.25)
@@ -141,7 +148,7 @@ admonition:
     font_style: bold
 blockquote:
   font_color: $base_font_color
-  font_size: $base_font_size_large
+  font_size: $base_font_size_large * 0.8
   border_color: $base_border_color
   border_width: 5
   # FIXME disable negative padding bottom once margin collapsing is implemented
@@ -214,7 +221,8 @@ table:
   #body_background_color: <hex value>
   body_stripe_background_color: f9f9f9
   foot_background_color: f0f0f0
-  border_color: dddddd
+  #border_color: dddddd
+  border_color: ffffff
   border_width: $base_border_width
   cell_padding: 3
 toc:
@@ -226,11 +234,12 @@ toc:
     #levels: 2 3
 # NOTE in addition to footer, header is also supported
 footer:
-  font_size: $base_font_size_small
+  font_size: $base_font_size_small * 0.6
+  font_color: a9a9a9
   # NOTE if background_color is set, background and border will span width of page
   border_color: dddddd
   border_width: 0.25
-  height: $base_line_height_length * 2.5
+  height: $base_line_height_length * 2
   line_height: 1
   padding: [$base_line_height_length / 2, 1, 0, 1]
   vertical_align: top
@@ -246,15 +255,17 @@ footer:
   recto:
     #columns: "<50% =0% >50%"
     right:
-      content: '{page-number}'
+      content: '{date}'
       #content: '{section-or-chapter-title} | {page-number}'
       #content: '{document-title} | {page-number}'
-    #center:
-    #  content: '{page-number}'
+    center:
+      content: '{prez_title}'
   verso:
     #columns: $footer_recto_columns
-    left:
-      content: $footer_recto_right_content
+    right:
+      content: '{date}'
+    #left:
+      #content: $footer_recto_right_content
       #content: '{page-number} | {chapter-title}'
-    #center:
-    #  content: '{page-number}'
+    center:
+      content: '{prez_title}'

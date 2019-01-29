@@ -3,6 +3,8 @@
 
 :imagesdir: ./images
 :customcss: ./css/fullscreen.css
+:prez_title: Test Driven Development
+:date: 30/01/2019
 
 // Pour avoir un comportement spécifique sur le PDF
 // ifdef::backend-pdf[]
@@ -48,10 +50,10 @@ endif::[]
 
 == Kent Beck
 
-[cols='1,1,2a']
+[cols='1,2,4a']
 |====
 |
-| image:kent_beck.jpg["Kent Beck",height=350]
+| image:kent_beck.jpg["Kent Beck",width=350]
 | * Extreme programming
 * Test-driven development
 * Design patterns
@@ -64,9 +66,9 @@ endif::[]
 
 == Préface
 
-[cols='1,2a']
+[cols='1,4a']
 |====
-| image:test_driven_development_by_example.jpg["TDD by example",height=300]
+| image:test_driven_development_by_example.jpg["TDD by example",width=350]
 | * N’écrivez pas une ligne de code tant que vous n’avez pas d’abord un test automatique qui échoue
 * Eliminez la duplication
 |====
@@ -99,10 +101,9 @@ entiers
 
 <<<
 
-[%notitle]
 == Questions
 
-image::questions.png[height=600]
+image::questions.png[align=center, width=500]
 
 <<<
 
@@ -118,7 +119,7 @@ image::questions.png[height=600]
 
 == Rétrospective
 
-image::retrospective.png[height=500]
+image::retrospective.png[align=center, width=800]
 
 <<<
 
@@ -233,8 +234,8 @@ Scénario: Compléter toute ma todo liste
 
 == Score de bowling
 
-** Le jeu est constitué de 10 cadres.
-** Pour chaque cadre, le joueur à deux opportunités de faire tomber les 10 quilles.
+** La grille de bowling est constituée de 10 cadres.
+** Pour chaque cadre, le joueur à deux lancés pour faire tomber les 10 quilles.
 ** Le score du cadre est le nombre de quilles tombées plus un bonus en cas de spare ou de strike.
 ** Il y a spare lorsque qu’un joueur fait tomber toutes les quilles en deux coups. Le bonus est le nombre de quilles tombées au coup suivant
 ** Il y a strike lorsque toutes les quilles tombent au premier essai. Le bonus est le score des deux coups suivants.
@@ -289,22 +290,26 @@ image:gameoflife.png[width=1000]
 
 * Afficher le score d'un match de tennis
 * On donne une suite indiquant qui a marqué chaque point et on retourne le score
-* Exemple
-** Entrée: AAABABBAB...
-** Sortie:
+* Exemples
+** AAAB => 40 - 15
+** AABB => 30A
+** BBBB => Jeu B
 
-[cols="2,1,1,1,1,2"]
-|====
-| | Joueur | Set | Jeu | Point |
-| | A | 2 | 4 | 40 |
-| | B | 1 | 5 | 15 |
-|====
+//** Entrée: AAABABBAB...
+//** Sortie:
+
+// [cols="2,1,1,1,1,2"]
+// |====
+// | | Joueur | Set | Jeu | Point |
+// | | A | 2 | 4 | 40 |
+// | | B | 1 | 5 | 15 |
+// |====
 
 <<<
 
 == Rétrospective
 
-image::retrospective.png[height=500]
+image::retrospective.png[align=center, width=800]
 
 <<<
 
