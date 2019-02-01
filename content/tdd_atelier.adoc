@@ -1,0 +1,81 @@
+
+//= Test Driven Development
+
+:imagesdir: ./images
+:customcss: ./css/fullscreen.css
+:prez_title: Test Driven Development
+:date: 30/01/2019
+
+
+== Score de bowling
+
+** La grille de bowling est constituée de 10 cadres.
+** Pour chaque cadre, le joueur à deux lancés pour faire tomber les 10 quilles.
+** Le score du cadre est le nombre de quilles tombées plus un bonus en cas de spare ou de strike.
+** Il y a spare lorsque qu’un joueur fait tomber toutes les quilles en deux coups. Le bonus est le nombre de quilles tombées au coup suivant
+** Il y a strike lorsque toutes les quilles tombent au premier essai. Le bonus est le score des deux coups suivants.
+
+image:bowling.png[width=1000]
+
+<<<
+
+== Le jeu de la vie: John conway
+
+* *Pour un emplacement ‘peuplé':*
+** Une cellule avec un ou aucun voisin meurt de solitude.
+** Une cellule avec quatre voisins ou plus meurt de surpopulation.
+** Une cellule avec deux ou trois voisins survit.
+* *Pour un emplacement ‘vide’ ou ‘non peuplé’*
+** Une cellule avec trois voisins devient peuplée.
+
+image:gameoflife.png[width=1000]
+
+<<<
+
+// == OCR Bank
+//
+// ....
+//     _  _     _  _  _  _  _
+//   | _| _||_||_ |_   ||_||_|
+//   ||_  _|  | _||_|  ||_| _|
+// ....
+// * Une entrée est composée de 4 lignes de 3 caractères chacune.
+// * Les 3 premières lignes forment un numéro et la 4ème est une ligne vide.
+// * Chaque numéro est composé de 9 chiffres.
+// * Vous devez décoder le texte pour extraire le numéro (ici: 123456789)
+//
+// <<<
+
+== How much water ?
+
+* Etant donnée une liste d'entiers représentant les hauteurs de colonnes
+* On cherche la quantité d’eau qui resterait prisonnière des cuvettes formées par les colonnes
+
+[cols='1,3a']
+|====
+.2+| image:water.jpg[width=400]
+| * Exemple :
+** Valeurs: 2, 5, 1, 3, 1, 2, 1, 7, 7, 6
+** Résultat: 17
+|====
+
+<<<
+
+== Tennis score
+
+* Afficher le score d'un match de tennis
+* On donne une suite indiquant qui a marqué chaque point et on retourne le score
+* Exemples
+** AAAB => 40 - 15
+** AABB => 30A
+** BBBB => Jeu B
+
+//** Entrée: AAABABBAB...
+//** Sortie:
+
+// [cols="2,1,1,1,1,2"]
+// |====
+// | | Joueur | Set | Jeu | Point |
+// | | A | 2 | 4 | 40 |
+// | | B | 1 | 5 | 15 |
+// |====
