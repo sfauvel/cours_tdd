@@ -7,3 +7,6 @@
 
 generate_pdf_landscape tdd_cours
 generate_revealjs tdd_cours
+
+
+generate_pdf_landscape tdd_atelier
