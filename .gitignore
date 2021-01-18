@@ -1,1 +1,11 @@
-/docs
+# IntelliJ
+/.idea/
+*.iml
+
+# Eclipse
+/.settings/
+.project
+.classpath
+
+# Maven
+/target

@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+
+
+<svg viewBox="0 -30 150 150"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+     <defs>
+      <svg id="red" width="70" height="100"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="red" />
+      </svg>
+      <svg id="green" width="70" height="100"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="green" />
+      </svg>
+      <svg id="blue" width="70" height="100"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="blue" />
+      </svg>
+    </defs>
+
+    <use xlink:href="#red" transform="rotate(110, 80, 50)" />
+    <use xlink:href="#green" transform="rotate(230, 80, 50)" />
+    <use xlink:href="#blue" transform="rotate(350, 80, 50)" />
+
+
+     <!-- Change the second value of rotate to growth shape-->
+     <!--image x="0" y="0" width="200" height="200" xlink:href="partialcirclered.svg"
+        transform="rotate(110, 190, 100)"/>
+
+     <image x="0" y="0" width="200" height="200" xlink:href="partialcirclegreen.svg"
+        transform="rotate(230, 190, 100)"/>
+
+     <image x="0" y="0" width="200" height="200" xlink:href="partialcircleblue.svg"
+        transform="rotate(350, 190, 100)"/>
+-->
+</svg>

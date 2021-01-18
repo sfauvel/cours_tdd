@@ -4,7 +4,7 @@
 :imagesdir: ./images
 :customcss: ./css/fullscreen.css
 :prez_title: Test Driven Development
-:date: 30/01/2019
+:date: 17/01/2021
 
 // Pour avoir un comportement spécifique sur le PDF
 // ifdef::backend-pdf[]
@@ -45,6 +45,11 @@ endif::[]
 
 * Le sujet principal n’est pas le test
 * Développement guidé par les exemples
+
+[NOTE.speaker]
+--
+
+--
 
 <<<
 
@@ -272,31 +277,41 @@ image::retrospective.png[align=center, width=800]
 
 == Références
 
-[,  "Kent Beck. Addison-Wesley, 1999"]
-""
-Extreme programming explained: embrace change.
-""
+[bibliography]
+- _Extreme programming explained: embrace change_ +
+Kent Beck, Addison-Wesley, 1999
 
-[, "Kent Beck. Addison-Wesley, 2002"]
-""
-Test-Driven Development: By Example
-""
+- _Test-Driven Development: By Example_ +
+Kent Beck. Addison-Wesley, 2002
 
-[, "David Astels. Prentice Hall, 2003"]
-""
-Test-Driven Development: A Practical Guide
-""
+- _Test-Driven Development: A Practical Guide_ +
+David Astels. Prentice Hall, 2003
 
-[, "Steve Freeman, Nat Pryce, 2009"]
-""
-Growing Object-Oriented Software, Guided by Tests
-""
+- _Growing Object-Oriented Software, Guided by Tests_ +
+Steve Freeman, Nat Pryce, 2009
 
 <<<
 
 == Sites
 
 * Cyber dojo: http://cyber-dojo.org/
+// IDE + Enoncés. Possibilité de travailler en groupe
 * CodingDojo: http://codingdojo.org/kata/
+// Enoncés
 * Yosethegame: http://yosethegame.com/
+// Apprendre le TDD en faisant passer les tests petit à petit
 * Coding Game: https://www.codingame.com/start
+// Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
+
+// == Resources
+// /home/sfauvel/Downloads/TDD - Agile Grenoble - 25_11_2020 - Diffusion.pdf
+
+// https://www.youtube.com/watch?v=EW98_rwUQec: TDD : pour que votre code soit testable et testé! - Xavier Nopre, 2019
+// https://www.youtube.com/watch?v=mYGS1hhEHZc: Xavier Screen Cast #3, Premier test unitaire et intro TDD (partie TDD à partir de 6mn)
+// https://xnopre.blogspot.com/ : Le blog de Xavier Nopre qui va un peu plus loin
+// https://www.youtube.com/watch?v=zerAfNIcrZM&feature=emb_logo, https://artisandeveloppeur.fr/arreter-de-creer-des-regressions-grace-au-tdd-avec-jean-pierre-lambert/ Arrêter de créer des régressions grâce au TDD avec Jean-Pierre Lambert
+// https://www.youtube.com/watch?v=nbSaq_ykOl4: Test-Driven Development (TDD) par l'exemple, et en français ! (FizzBuzz mais le déroulement est discutable)
+
+// https://www.meetup.com/fr-FR/Craft-your-Skills/
+// https://www.meetup.com/fr-FR/CARA-Dojo/
+// https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon

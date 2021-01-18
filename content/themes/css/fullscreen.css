@@ -44,3 +44,9 @@
 .reveal td.valign-top {
   vertical-align: top;
 }
+
+/* ************************************************ */
+
+.reveal #_tdd p {
+    font-size: 2em;
+}
