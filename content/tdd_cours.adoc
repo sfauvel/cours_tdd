@@ -41,10 +41,30 @@ endif::[]
 //
 // <<<
 
+== Plan
+
+* Présentation rapide
+* Démonstration
+* Premier exercice
+* Points complémentaires
+* Deuxième exercice
+* Conclusion
+
 == TDD
 
 * Le sujet principal n’est pas le test
-* Développement guidé par les exemples
+ifdef::backend-pdf[]
+** Il ne faut pas voir le TDD comme une manière de faire des tests
+endif::[]
+* C'est un process de développement guidé par les exemples
+ifdef::backend-pdf[]
+** Le principe est de développer en partant de cas concrets
+** Les exemples successifs mettent en évidence les manquent dans l'implémentation
+endif::[]
+* L'objectif est de maintenir un rythme de développement
+ifdef::backend-pdf[]
+** Les évolutions du logicel doivent rester gérable dans le temps
+endif::[]
 
 [NOTE.speaker]
 --
@@ -60,12 +80,19 @@ endif::[]
 |
 | image:kent_beck.jpg["Kent Beck",width=350]
 | * Extreme programming
-* Test-driven development
-* Design patterns
-* CRC cards
-* JUnit
 * Manifeste agile
+* Test-driven development
+* JUnit
 |====
+
+ifdef::backend-pdf[]
+https://fr.wikipedia.org/wiki/Kent_Beck
+endif::[]
+
+[NOTE.speaker]
+--
+--
+
 
 <<<
 
@@ -78,11 +105,31 @@ endif::[]
 * Eliminez la duplication
 |====
 
+
+[NOTE.speaker]
+--
+Kent Beck est l'auteur de "TDD by example" +
+Ces 2 phrases sont issues de la préface du livre +
+Il est ajouté que "ces 2 règles simples entrainent des comportements individuels complexes"
+--
+
+
 <<<
 
 == TDD mantra
 
 image::mantra.png[width=600, align="center"]
+
+ifdef::backend-pdf[]
+<<<
+
+== TDD mantra
+
+* Rouge: Ecrire un test qui échoue et qui prouve qu'il faut modifier le code
+* Vert: Faire passer le test avec une implémentation rapide
+* Bleu: Remanier le code pour simplifier les prochaines évolutions
+
+endif::[]
 
 <<<
 
@@ -114,11 +161,17 @@ image::questions.png[align=center, width=500]
 
 == Premier exercice - FizzBuzz
 
-* Le programme FizzBuzz retourne le nombre qu’on lui donne et qui est compris entre 1 et 100
+* Implémenter la fonction FizzBuzz qui prend en paramètre un nombre entre 1 et 100
+* Par défaut, retourner le nombre sous forme de chaîne de caratères
 * Si le nombre est un multiple de 3, retourner Fizz
 * Si le nombre est un multiple de 5, retourner Buzz
 * Pour les nombres multiple de 3 et de 5, retourner FizzBuzz
-* Dans les autres cas, on retourne le nombre
+
+[NOTE.speaker]
+--
+Pour apprendre le TDD, il faut le pratiquer
+--
+
 
 <<<
 
@@ -135,6 +188,13 @@ image::retrospective.png[align=center, width=800]
 * Ne pas modifier le test et le code en même temps
 * Prendre autant soin des tests que du code
 
+
+[NOTE.speaker]
+--
+Points importants pour la mise en place du TDD
+--
+
+
 <<<
 
 == Bonnes pratiques de test
@@ -146,16 +206,38 @@ image::retrospective.png[align=center, width=800]
 * Tester une seule chose à la fois
 * Le nom du test indique l’objectif
 
+[NOTE.speaker]
+--
+On va écrire beaucoup de test.
+Il est important de les écrire correctement pour qu'ils restent maintenable et utiles.
+--
+
+
 <<<
 
 == Outillage
-* Junit, TestNG
-* Maven, Ant
-* Eclipse, IntelliJ, NetBean
-* Jenkins, Travis CI, GitLab CI
-* Cobertura, Emma
-* Sonar, Checkstyle, PMD, ...
-* MoreUnit, Inifinitest
+
+* Framework de tests: Junit, TestNG
+* Outils de build: Maven, Ant
+* IDE: Eclipse, IntelliJ, NetBean
+* Intégration continue: Jenkins, Travis CI, GitLab CI
+* Couverture de code: Cobertura, Emma
+* Analyse de code: Sonar, Checkstyle, PMD, ...
+* Plugins: MoreUnit, Inifinitest
+
+
+[NOTE.speaker]
+--
+La pratique du TDD vise à garder un code propre
+Les frameworks de tests permettent d'exécuter les tests et produire des rapports.
+Les outils de build peuvent intégrer l'exécution des tests (mvn test)
+L'IDE permet l'execution des tests et fourni des outils de refactoring
+L'intégration continue permet de savoir en permanence dans quel état se trouve le projet
+La couverture de code n'a que peut d'intérêt en TDD mais il est toujours intéressant de l'avoir
+L'analyse de code permet d'identifier des mauvaises pratiques, voir des bugs
+Des outils complémentaire aident à la productivité et au feedback rapide
+--
+
 
 <<<
 
@@ -168,6 +250,14 @@ image::retrospective.png[align=center, width=800]
 ** Exemple d’utilisation du code
 ** Spécification du comportement
 
+
+[NOTE.speaker]
+--
+Il faut voir les tests comme une spécification/documentation exécutable
+Il faut donc lui apporté de l'attention pour qu'ils soient lisibles
+Il faut tester les comportements et non l'implémentation pour permettre le refactoring
+--
+
 <<<
 
 == Concepts agiles
@@ -179,14 +269,32 @@ image::retrospective.png[align=center, width=800]
 ** On ne développe que ce qui est nécessaire pour faire passer un test
 ** On écrit un test que pour décrire un cas utilisateur
 
+
+[NOTE.speaker]
+--
+Le TDD s'inscrit pleinement dans un vision agile du développement.
+--
+
+
 <<<
 
 == Feedback
 
 * Baby steps
 ** Approche itérative très courte
+** Construction organique
 * Feedback
 ** Retour immédiat
+** Rythme de développement
+
+[NOTE.speaker]
+--
+Le développement se fait de manière organique en opposition avec une vision "sur plan"
+On doit développer en état capable de modifier à tout moment et de garder cette capacité
+
+Le feedback rapide permet de savoir où on en est
+Il permet d'avancer continuellement avec des objectifs courts qui maintiennent le rythme
+--
 
 <<<
 
@@ -194,6 +302,15 @@ image::retrospective.png[align=center, width=800]
 
 * La couverture est assurée par construction
 * On ne s’en préoccupe pas spécialement
+
+
+[NOTE.speaker]
+--
+Tout code étant écrit de manière minimal suite à un test qui échoue
+La couverture doit donc être proche de 100% mais surtout chaque test montre un cas particulier à gérer
+La mesure de la couverture est très relative car elle montre que l'on passe dans le code plus que le code est testé
+--
+
 
 <<<
 
@@ -203,6 +320,15 @@ image::retrospective.png[align=center, width=800]
 ** Modification de l’implémentation sans changer le comportement
 ** Elimination de la duplication
 ** Amélioration de l’implémentation
+
+
+[NOTE.speaker]
+--
+La qualité de code est un point essentiel pour maintenir le code dans un état gérable.
+Elle se dégrade fatalement au fil des ajouts
+Le TDD permet de conserver cette qualité de code en permettant un refactoring sécurisé.
+--
+
 
 <<<
 
@@ -278,17 +404,17 @@ image::retrospective.png[align=center, width=800]
 == Références
 
 [bibliography]
-- _Extreme programming explained: embrace change_ +
-Kent Beck, Addison-Wesley, 1999
+- *_Extreme programming explained: embrace change_* +
+[.small]#Kent Beck, Addison-Wesley, 1999#
 
-- _Test-Driven Development: By Example_ +
-Kent Beck. Addison-Wesley, 2002
+- *_Test-Driven Development: By Example_* +
+[.small]#Kent Beck. Addison-Wesley, 2002#
 
-- _Test-Driven Development: A Practical Guide_ +
-David Astels. Prentice Hall, 2003
+- *_Test-Driven Development: A Practical Guide_* +
+[.small]#David Astels. Prentice Hall, 2003#
 
-- _Growing Object-Oriented Software, Guided by Tests_ +
-Steve Freeman, Nat Pryce, 2009
+- *_Growing Object-Oriented Software, Guided by Tests_* +
+[.small]#Steve Freeman, Nat Pryce, 2009#
 
 <<<
 
@@ -303,15 +429,26 @@ Steve Freeman, Nat Pryce, 2009
 * Coding Game: https://www.codingame.com/start
 // Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
 
-// == Resources
+== Resources
 // /home/sfauvel/Downloads/TDD - Agile Grenoble - 25_11_2020 - Diffusion.pdf
 
-// https://www.youtube.com/watch?v=EW98_rwUQec: TDD : pour que votre code soit testable et testé! - Xavier Nopre, 2019
-// https://www.youtube.com/watch?v=mYGS1hhEHZc: Xavier Screen Cast #3, Premier test unitaire et intro TDD (partie TDD à partir de 6mn)
+* Vidéos
+** link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] - Xavier Nopre, 2019
+** link:https://www.youtube.com/watch?v=mYGS1hhEHZc[Xavier Screen Cast #3, Premier test unitaire et intro TDD], présentation du TDD à partir de 6mn
 // https://xnopre.blogspot.com/ : Le blog de Xavier Nopre qui va un peu plus loin
 // https://www.youtube.com/watch?v=zerAfNIcrZM&feature=emb_logo, https://artisandeveloppeur.fr/arreter-de-creer-des-regressions-grace-au-tdd-avec-jean-pierre-lambert/ Arrêter de créer des régressions grâce au TDD avec Jean-Pierre Lambert
 // https://www.youtube.com/watch?v=nbSaq_ykOl4: Test-Driven Development (TDD) par l'exemple, et en français ! (FizzBuzz mais le déroulement est discutable)
+** link:https://www.youtube.com/watch?v=vBJM5pzBfhY[Test-Driven Development (TDD) in Python #1 - The 3 Steps of TDD] - Jason Gorman
 
-// https://www.meetup.com/fr-FR/Craft-your-Skills/
-// https://www.meetup.com/fr-FR/CARA-Dojo/
-// https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon
+* Autres
+** link:http://codemanship.co.uk/parlezuml/blog/?postid=1551[TDD] - Jason Gorman, 2016
+
+== Meetups
+
+* https://www.coderetreat.org
+* https://www.meetup.com/fr-FR/Craft-your-Skills/
+* https://www.meetup.com/fr-FR/CARA-Dojo/
+* https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon
+
+
+== Pour apprendre le TDD, il faut le pratiquer

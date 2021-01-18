@@ -50,3 +50,7 @@
 .reveal #_tdd p {
     font-size: 2em;
 }
+
+.reveal .small {
+    font-size: 0.8em;
+}
