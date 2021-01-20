@@ -32,6 +32,7 @@ ifdef::backend-pdf[]
 *Development*
 endif::[]
 
+
 <<<
 
 // [%notitle]
@@ -50,6 +51,8 @@ endif::[]
 * Deuxième exercice
 * Conclusion
 
+<<<
+
 == TDD
 
 * Le sujet principal n’est pas le test
@@ -66,10 +69,6 @@ ifdef::backend-pdf[]
 ** Les évolutions du logicel doivent rester gérable dans le temps
 endif::[]
 
-[NOTE.speaker]
---
-
---
 
 <<<
 
@@ -83,22 +82,19 @@ endif::[]
 * Manifeste agile
 * Test-driven development
 * JUnit
+
 |====
 
 ifdef::backend-pdf[]
 https://fr.wikipedia.org/wiki/Kent_Beck
 endif::[]
 
-[NOTE.speaker]
---
---
-
 
 <<<
 
 == Préface
 
-[cols='1,4a']
+[cols='2,4a']
 |====
 | image:test_driven_development_by_example.jpg["TDD by example",width=350]
 | * N’écrivez pas une ligne de code tant que vous n’avez pas d’abord un test automatique qui échoue
@@ -106,13 +102,14 @@ endif::[]
 |====
 
 
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Kent Beck est l'auteur de "TDD by example" +
 Ces 2 phrases sont issues de la préface du livre +
 Il est ajouté que "ces 2 règles simples entrainent des comportements individuels complexes"
 --
-
+endif::[]
 
 <<<
 
@@ -167,11 +164,13 @@ image::questions.png[align=center, width=500]
 * Si le nombre est un multiple de 5, retourner Buzz
 * Pour les nombres multiple de 3 et de 5, retourner FizzBuzz
 
+
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Pour apprendre le TDD, il faut le pratiquer
 --
-
+endif::[]
 
 <<<
 
@@ -184,19 +183,32 @@ image::retrospective.png[align=center, width=800]
 == Points d’attention
 
 * Se focaliser sur le comportement/besoin et non la manière
+ifdef::backend-pdf[]
+** Décrire les cas métier sans penser à la manière de les coder
+endif::[]
 * Penser utilisation avant implémentation
+ifdef::backend-pdf[]
+** Réfléchir à comment on veut utiliser l'API
+endif::[]
 * Ne pas modifier le test et le code en même temps
+ifdef::backend-pdf[]
+** Faire des petits pas
+** Rester dans un état stable en permanence
+endif::[]
 * Prendre autant soin des tests que du code
-
-
+ifdef::backend-pdf[]
+** Les tests sont aussi importants que le code
+endif::[]
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Points importants pour la mise en place du TDD
 --
-
+endif::[]
 
 <<<
 
+ifndef::backend-pdf[]
 == Bonnes pratiques de test
 
 * Indépendance
@@ -205,13 +217,32 @@ Points importants pour la mise en place du TDD
 * Lisibilité
 * Tester une seule chose à la fois
 * Le nom du test indique l’objectif
+endif::[]
 
+ifdef::backend-pdf[]
+
+== Bonnes pratiques de test
+
+* *Indépendance*: Les tests peuvent être exécuté tout ou partie et sans ordre spécifique.
+* *Rapidité d’exécution*: Pour être joués en permanence, ils doivent être *très* rapides.
+* *Reproductibilité*: Le résultat doit être le même quelque soit les conditions d'exécution.
+
+<<<
+
+== Bonnes pratiques de test
+
+* *Lisibilité*: On doit comprendre ce qui se passe uniquement en lisant le test.
+* *Tester une seule chose à la fois*: un test en échec ne doit avoir qu'une raison d'échouer.
+* *Le nom du test indique l’objectif*: On sait ce que fait un test simplement en lisant son nom.
+endif::[]
+
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 On va écrire beaucoup de test.
 Il est important de les écrire correctement pour qu'ils restent maintenable et utiles.
 --
-
+endif::[]
 
 <<<
 
@@ -226,6 +257,7 @@ Il est important de les écrire correctement pour qu'ils restent maintenable et 
 * Plugins: MoreUnit, Inifinitest
 
 
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 La pratique du TDD vise à garder un code propre
@@ -237,11 +269,16 @@ La couverture de code n'a que peut d'intérêt en TDD mais il est toujours inté
 L'analyse de code permet d'identifier des mauvaises pratiques, voir des bugs
 Des outils complémentaire aident à la productivité et au feedback rapide
 --
-
+endif::[]
 
 <<<
 
 == Spécification / Documentation
+
+ifdef::backend-pdf[]
+Les tests sont avant tout une suite d'exemples du fonctionnement de l'application.
+Ils doivent permettrent de comprendre comment le logiciel marche sans aller voir le code.
+endif::[]
 
 * Spécification exécutable
 ** Code lisible
@@ -251,16 +288,22 @@ Des outils complémentaire aident à la productivité et au feedback rapide
 ** Spécification du comportement
 
 
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Il faut voir les tests comme une spécification/documentation exécutable
 Il faut donc lui apporté de l'attention pour qu'ils soient lisibles
 Il faut tester les comportements et non l'implémentation pour permettre le refactoring
 --
+endif::[]
 
 <<<
 
 == Concepts agiles
+
+ifdef::backend-pdf[]
+Le TDD permet de mettre oeuvre une certaines philosophie portée par l'agilité.
+endif::[]
 
 * KISS (Keep It simple, stupid)
 ** On commence par une implémentation triviale
@@ -270,15 +313,20 @@ Il faut tester les comportements et non l'implémentation pour permettre le refa
 ** On écrit un test que pour décrire un cas utilisateur
 
 
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Le TDD s'inscrit pleinement dans un vision agile du développement.
 --
-
+endif::[]
 
 <<<
 
 == Feedback
+
+ifdef::backend-pdf[]
+Le TDD permet de développer progressivement une solution, tout en sachant à tout moment où on en est.
+endif::[]
 
 * Baby steps
 ** Approche itérative très courte
@@ -287,6 +335,8 @@ Le TDD s'inscrit pleinement dans un vision agile du développement.
 ** Retour immédiat
 ** Rythme de développement
 
+
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Le développement se fait de manière organique en opposition avec une vision "sur plan"
@@ -295,26 +345,40 @@ On doit développer en état capable de modifier à tout moment et de garder cet
 Le feedback rapide permet de savoir où on en est
 Il permet d'avancer continuellement avec des objectifs courts qui maintiennent le rythme
 --
+endif::[]
 
 <<<
 
 == Mesure de la couverture
 
+ifdef::backend-pdf[]
+La couverture de code permet d'identifier les lignes de codes exécutées et de mettre en évidence des lacunes.
+Elle n'assure pas la pertinence des tests.
+L'objectif doit être de se rassurer sur le bon fonctionnement avant de respecter une métrique.
+endif::[]
+
 * La couverture est assurée par construction
 * On ne s’en préoccupe pas spécialement
 
 
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 Tout code étant écrit de manière minimal suite à un test qui échoue
 La couverture doit donc être proche de 100% mais surtout chaque test montre un cas particulier à gérer
 La mesure de la couverture est très relative car elle montre que l'on passe dans le code plus que le code est testé
 --
-
+endif::[]
 
 <<<
 
 == Qualité de code
+
+ifdef::backend-pdf[]
+Le TDD rend possible la modification du code de manière sécurisée.
+C'est le prérequis pour limiter la dégradation du code au fil des évolutions
+et pour conserver un logiciel maintenable dans le temps.
+endif::[]
 
 * Refactoring
 ** Modification de l’implémentation sans changer le comportement
@@ -322,13 +386,14 @@ La mesure de la couverture est très relative car elle montre que l'on passe dan
 ** Amélioration de l’implémentation
 
 
+ifdef::with_comment[]
 [NOTE.speaker]
 --
 La qualité de code est un point essentiel pour maintenir le code dans un état gérable.
 Elle se dégrade fatalement au fil des ajouts
 Le TDD permet de conserver cette qualité de code en permettant un refactoring sécurisé.
 --
-
+endif::[]
 
 <<<
 
@@ -339,17 +404,28 @@ Le TDD permet de conserver cette qualité de code en permettant un refactoring s
 * Rédaction en collaboration avec le métier
 * Syntaxe Gerkhin: Given / When / Then
 
+ifndef::backend-pdf[]
 [cols="1,1a,1"]
 |====
 |
 |....
 Scénario: Compléter toute ma todo liste
-  Etant donné que j’ai 2 tâches dans ma todo liste
-  Lorsque je complète toutes mes tâches
-  Alors ma todo liste est vide
+    Etant donné que j’ai 2 tâches dans ma todo liste
+    Lorsque je complète toutes mes tâches
+    Alors ma todo liste est vide
 ....
 |
 |====
+endif::[]
+
+ifdef::backend-pdf[]
+----
+Scénario: Compléter toute ma todo liste
+  Etant donné que j’ai 2 tâches dans ma todo liste
+  Lorsque je complète toutes mes tâches
+  Alors ma todo liste est vide
+----
+endif::[]
 
 <<<
 
@@ -374,6 +450,10 @@ image::retrospective.png[align=center, width=800]
 <<<
 
 == Les points difficiles
+
+ifdef::backend-pdf[]
+Certains points demandent un peu d'expérience avant d'être à l'aise pour les adresser.
+endif::[]
 
 * Les méthodes privées
 * Les contributeurs
@@ -404,6 +484,10 @@ image::retrospective.png[align=center, width=800]
 == Références
 
 [bibliography]
+
+- *_link:http://codemanship.co.uk/parlezuml/blog/?postid=1551[TDD]_* +
+[.small]#Jason Gorman, 2016#
+
 - *_Extreme programming explained: embrace change_* +
 [.small]#Kent Beck, Addison-Wesley, 1999#
 
@@ -429,19 +513,21 @@ image::retrospective.png[align=center, width=800]
 * Coding Game: https://www.codingame.com/start
 // Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
 
-== Resources
+<<<
+
+== Vidéos
 // /home/sfauvel/Downloads/TDD - Agile Grenoble - 25_11_2020 - Diffusion.pdf
 
-* Vidéos
-** link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] - Xavier Nopre, 2019
-** link:https://www.youtube.com/watch?v=mYGS1hhEHZc[Xavier Screen Cast #3, Premier test unitaire et intro TDD], présentation du TDD à partir de 6mn
-// https://xnopre.blogspot.com/ : Le blog de Xavier Nopre qui va un peu plus loin
-// https://www.youtube.com/watch?v=zerAfNIcrZM&feature=emb_logo, https://artisandeveloppeur.fr/arreter-de-creer-des-regressions-grace-au-tdd-avec-jean-pierre-lambert/ Arrêter de créer des régressions grâce au TDD avec Jean-Pierre Lambert
-// https://www.youtube.com/watch?v=nbSaq_ykOl4: Test-Driven Development (TDD) par l'exemple, et en français ! (FizzBuzz mais le déroulement est discutable)
-** link:https://www.youtube.com/watch?v=vBJM5pzBfhY[Test-Driven Development (TDD) in Python #1 - The 3 Steps of TDD] - Jason Gorman
+* link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] - Xavier Nopre, 2019
+* link:https://www.youtube.com/watch?v=mYGS1hhEHZc[Xavier Screen Cast #3, Premier test unitaire et intro TDD], présentation du TDD à partir de 6mn
+//* https://xnopre.blogspot.com/ : Le blog de Xavier Nopre qui va un peu plus loin
+//* https://www.youtube.com/watch?v=zerAfNIcrZM&feature=emb_logo, https://artisandeveloppeur.fr/arreter-de-creer-des-regressions-grace-au-tdd-avec-jean-pierre-lambert/ Arrêter de créer des régressions grâce au TDD avec Jean-Pierre Lambert
+//* https://www.youtube.com/watch?v=nbSaq_ykOl4: Test-Driven Development (TDD) par l'exemple, et en français ! (FizzBuzz mais le déroulement est discutable)
+* link:https://www.youtube.com/watch?v=vBJM5pzBfhY[Test-Driven Development (TDD) in Python #1 - The 3 Steps of TDD] - Jason Gorman
 
-* Autres
-** link:http://codemanship.co.uk/parlezuml/blog/?postid=1551[TDD] - Jason Gorman, 2016
+// https://vimeo.com/34732838 : Game of Life Kata by Emily Bache in Python 2011
+
+<<<
 
 == Meetups
 
@@ -450,5 +536,7 @@ image::retrospective.png[align=center, width=800]
 * https://www.meetup.com/fr-FR/CARA-Dojo/
 * https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon
 
+<<<
 
-== Pour apprendre le TDD, il faut le pratiquer
+== Pour apprendre le TDD, il faut le pratique
+

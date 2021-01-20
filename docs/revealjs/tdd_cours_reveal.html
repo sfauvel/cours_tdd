@@ -18,17 +18,13 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script><!--[if 
 <div class="paragraph"><p><strong>Driven</strong></p></div>
 <div class="paragraph"><p><strong>Development</strong></p></div>
 <div style="page-break-after: always;"></div></section>
-<section id="_plan"><h2>Plan</h2><div class="ulist"><ul><li><p>Présentation rapide</p></li><li><p>Démonstration</p></li><li><p>Premier exercice</p></li><li><p>Points complémentaires</p></li><li><p>Deuxième exercice</p></li><li><p>Conclusion</p></li></ul></div></section>
+<section id="_plan"><h2>Plan</h2><div class="ulist"><ul><li><p>Présentation rapide</p></li><li><p>Démonstration</p></li><li><p>Premier exercice</p></li><li><p>Points complémentaires</p></li><li><p>Deuxième exercice</p></li><li><p>Conclusion</p></li></ul></div>
+<div style="page-break-after: always;"></div></section>
 <section id="_tdd_2"><h2>TDD</h2><div class="ulist"><ul><li><p>Le sujet principal n’est pas le test</p></li><li><p>C&#8217;est un process de développement guidé par les exemples</p></li><li><p>L&#8217;objectif est de maintenir un rythme de développement</p></li></ul></div>
-<aside class="notes"></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_kent_beck"><h2>Kent Beck</h2><table class="tableblock frame-all grid-all" style="width:100%"><colgroup><col style="width:14.2857%"><col style="width:28.5714%"><col style="width:57.1429%"></colgroup><tbody><tr><td class="tableblock halign-left valign-top"></td><td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/kent_beck.jpg" alt="Kent Beck" width="350"></span></p></td><td class="tableblock halign-left valign-top"><div><div class="ulist"><ul><li><p>Extreme programming</p></li><li><p>Manifeste agile</p></li><li><p>Test-driven development</p></li><li><p>JUnit</p></li></ul></div></div></td></tr></table>
-<aside class="notes"></aside>
 <div style="page-break-after: always;"></div></section>
-<section id="_préface"><h2>Préface</h2><table class="tableblock frame-all grid-all" style="width:100%"><colgroup><col style="width:20%"><col style="width:80%"></colgroup><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/test_driven_development_by_example.jpg" alt="TDD by example" width="350"></span></p></td><td class="tableblock halign-left valign-top"><div><div class="ulist"><ul><li><p>N’écrivez pas une ligne de code tant que vous n’avez pas d’abord un test automatique qui échoue</p></li><li><p>Eliminez la duplication</p></li></ul></div></div></td></tr></table>
-<aside class="notes"><div class="paragraph"><p>Kent Beck est l&#8217;auteur de "TDD by example"<br>
-Ces 2 phrases sont issues de la préface du livre<br>
-Il est ajouté que "ces 2 règles simples entrainent des comportements individuels complexes"</p></div></aside>
+<section id="_préface"><h2>Préface</h2><table class="tableblock frame-all grid-all" style="width:100%"><colgroup><col style="width:33.3333%"><col style="width:66.6667%"></colgroup><tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="./images/test_driven_development_by_example.jpg" alt="TDD by example" width="350"></span></p></td><td class="tableblock halign-left valign-top"><div><div class="ulist"><ul><li><p>N’écrivez pas une ligne de code tant que vous n’avez pas d’abord un test automatique qui échoue</p></li><li><p>Eliminez la duplication</p></li></ul></div></div></td></tr></table>
 <div style="page-break-after: always;"></div></section>
 <section id="_tdd_mantra"><h2>TDD mantra</h2><div class="imageblock" style="text-align: center"><img src="./images/mantra.png" alt="mantra" width="600"></div>
 <div style="page-break-after: always;"></div></section>
@@ -40,56 +36,30 @@ entiers</p></li></ul></div>
 <section id="_questions"><h2>Questions</h2><div class="imageblock" style="text-align: center"><img src="./images/questions.png" alt="questions" width="500"></div>
 <div style="page-break-after: always;"></div></section>
 <section id="_premier_exercice_fizzbuzz"><h2>Premier exercice - FizzBuzz</h2><div class="ulist"><ul><li><p>Implémenter la fonction FizzBuzz qui prend en paramètre un nombre entre 1 et 100</p></li><li><p>Par défaut, retourner le nombre sous forme de chaîne de caratères</p></li><li><p>Si le nombre est un multiple de 3, retourner Fizz</p></li><li><p>Si le nombre est un multiple de 5, retourner Buzz</p></li><li><p>Pour les nombres multiple de 3 et de 5, retourner FizzBuzz</p></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>Pour apprendre le TDD, il faut le pratiquer</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_rétrospective"><h2>Rétrospective</h2><div class="imageblock" style="text-align: center"><img src="./images/retrospective.png" alt="retrospective" width="800"></div>
 <div style="page-break-after: always;"></div></section>
 <section id="_points_dattention"><h2>Points d’attention</h2><div class="ulist"><ul><li><p>Se focaliser sur le comportement/besoin et non la manière</p></li><li><p>Penser utilisation avant implémentation</p></li><li><p>Ne pas modifier le test et le code en même temps</p></li><li><p>Prendre autant soin des tests que du code</p></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>Points importants pour la mise en place du TDD</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_bonnes_pratiques_de_test"><h2>Bonnes pratiques de test</h2><div class="ulist"><ul><li><p>Indépendance</p></li><li><p>Rapidité d’exécution</p></li><li><p>Reproductibilité</p></li><li><p>Lisibilité</p></li><li><p>Tester une seule chose à la fois</p></li><li><p>Le nom du test indique l’objectif</p></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>On va écrire beaucoup de test.
-Il est important de les écrire correctement pour qu&#8217;ils restent maintenable et utiles.</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_outillage"><h2>Outillage</h2><div class="ulist"><ul><li><p>Framework de tests: Junit, TestNG</p></li><li><p>Outils de build: Maven, Ant</p></li><li><p>IDE: Eclipse, IntelliJ, NetBean</p></li><li><p>Intégration continue: Jenkins, Travis CI, GitLab CI</p></li><li><p>Couverture de code: Cobertura, Emma</p></li><li><p>Analyse de code: Sonar, Checkstyle, PMD, &#8230;&#8203;</p></li><li><p>Plugins: MoreUnit, Inifinitest</p></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>La pratique du TDD vise à garder un code propre
-Les frameworks de tests permettent d&#8217;exécuter les tests et produire des rapports.
-Les outils de build peuvent intégrer l&#8217;exécution des tests (mvn test)
-L&#8217;IDE permet l&#8217;execution des tests et fourni des outils de refactoring
-L&#8217;intégration continue permet de savoir en permanence dans quel état se trouve le projet
-La couverture de code n&#8217;a que peut d&#8217;intérêt en TDD mais il est toujours intéressant de l&#8217;avoir
-L&#8217;analyse de code permet d&#8217;identifier des mauvaises pratiques, voir des bugs
-Des outils complémentaire aident à la productivité et au feedback rapide</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_spécification_documentation"><h2>Spécification / Documentation</h2><div class="ulist"><ul><li><p>Spécification exécutable</p><div class="ulist"><ul><li><p>Code lisible</p></li><li><p>Indépendant de l’implémentation</p></li></ul></div></li><li><p>Documentation à jour</p><div class="ulist"><ul><li><p>Exemple d’utilisation du code</p></li><li><p>Spécification du comportement</p></li></ul></div></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>Il faut voir les tests comme une spécification/documentation exécutable
-Il faut donc lui apporté de l&#8217;attention pour qu&#8217;ils soient lisibles
-Il faut tester les comportements et non l&#8217;implémentation pour permettre le refactoring</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_concepts_agiles"><h2>Concepts agiles</h2><div class="ulist"><ul><li><p>KISS (Keep It simple, stupid)</p><div class="ulist"><ul><li><p>On commence par une implémentation triviale</p></li><li><p>On restructure pour simplifier</p></li></ul></div></li><li><p>YAGNI (You Ain&#8217;t Gonna Need It)</p><div class="ulist"><ul><li><p>On ne développe que ce qui est nécessaire pour faire passer un test</p></li><li><p>On écrit un test que pour décrire un cas utilisateur</p></li></ul></div></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>Le TDD s&#8217;inscrit pleinement dans un vision agile du développement.</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_feedback"><h2>Feedback</h2><div class="ulist"><ul><li><p>Baby steps</p><div class="ulist"><ul><li><p>Approche itérative très courte</p></li><li><p>Construction organique</p></li></ul></div></li><li><p>Feedback</p><div class="ulist"><ul><li><p>Retour immédiat</p></li><li><p>Rythme de développement</p></li></ul></div></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>Le développement se fait de manière organique en opposition avec une vision "sur plan"
-On doit développer en état capable de modifier à tout moment et de garder cette capacité</p></div>
-<div class="paragraph"><p>Le feedback rapide permet de savoir où on en est
-Il permet d&#8217;avancer continuellement avec des objectifs courts qui maintiennent le rythme</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_mesure_de_la_couverture"><h2>Mesure de la couverture</h2><div class="ulist"><ul><li><p>La couverture est assurée par construction</p></li><li><p>On ne s’en préoccupe pas spécialement</p></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>Tout code étant écrit de manière minimal suite à un test qui échoue
-La couverture doit donc être proche de 100% mais surtout chaque test montre un cas particulier à gérer
-La mesure de la couverture est très relative car elle montre que l&#8217;on passe dans le code plus que le code est testé</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_qualité_de_code"><h2>Qualité de code</h2><div class="ulist"><ul><li><p>Refactoring</p><div class="ulist"><ul><li><p>Modification de l’implémentation sans changer le comportement</p></li><li><p>Elimination de la duplication</p></li><li><p>Amélioration de l’implémentation</p></li></ul></div></li></ul></div>
-<aside class="notes"><div class="paragraph"><p>La qualité de code est un point essentiel pour maintenir le code dans un état gérable.
-Elle se dégrade fatalement au fil des ajouts
-Le TDD permet de conserver cette qualité de code en permettant un refactoring sécurisé.</p></div></aside>
 <div style="page-break-after: always;"></div></section>
 <section id="_bdd_behavior_driven_development"><h2>BDD: Behavior Driven Development</h2><div class="ulist"><ul><li><p>Continuité du TDD</p></li><li><p>Encore plus orienté vers le métier</p></li><li><p>Rédaction en collaboration avec le métier</p></li><li><p>Syntaxe Gerkhin: Given / When / Then</p></li></ul></div>
 <table class="tableblock frame-all grid-all" style="width:100%"><colgroup><col style="width:33.3333%"><col style="width:33.3333%"><col style="width:33.3334%"></colgroup><tbody><tr><td class="tableblock halign-left valign-top"></td><td class="tableblock halign-left valign-top"><div><div class="literalblock"><div class="content"><pre>Scénario: Compléter toute ma todo liste
-  Etant donné que j’ai 2 tâches dans ma todo liste
-  Lorsque je complète toutes mes tâches
-  Alors ma todo liste est vide</pre></div></div></div></td><td class="tableblock halign-left valign-top"></td></tr></table>
+    Etant donné que j’ai 2 tâches dans ma todo liste
+    Lorsque je complète toutes mes tâches
+    Alors ma todo liste est vide</pre></div></div></div></td><td class="tableblock halign-left valign-top"></td></tr></table>
 <div style="page-break-after: always;"></div></section>
 <section id="_second_exercice"><h2>Second exercice</h2><div class="ulist"><ul><li><p>Bowling Game</p></li><li><p>Game of life</p></li><li><p>How much water ?</p></li><li><p>Tennis score</p></li></ul></div>
 <div style="page-break-after: always;"></div></section>
@@ -112,16 +82,20 @@ Le TDD permet de conserver cette qualité de code en permettant un refactoring s
 <div style="page-break-after: always;"></div></section>
 <section id="_bénéfices_2"><h2>Bénéfices</h2><div class="ulist"><ul><li><p>Le tests ne sont plus une option "lorsqu’il reste du temps"</p></li><li><p>On ne perd pas du temps à écrire les tests, on gagne du temps pour écrire le code</p></li></ul></div>
 <div style="page-break-after: always;"></div></section>
-<section id="_références"><h2>Références</h2><div class="ulist bibliography"><ul class="bibliography"><li><p><strong><em>Extreme programming explained: embrace change</em></strong><br>
+<section id="_références"><h2>Références</h2><div class="ulist bibliography"><ul class="bibliography"><li><p><strong><em><a href="http://codemanship.co.uk/parlezuml/blog/?postid=1551">TDD</a></em></strong><br>
+<span class="small">Jason Gorman, 2016</span></p></li><li><p><strong><em>Extreme programming explained: embrace change</em></strong><br>
 <span class="small">Kent Beck, Addison-Wesley, 1999</span></p></li><li><p><strong><em>Test-Driven Development: By Example</em></strong><br>
 <span class="small">Kent Beck. Addison-Wesley, 2002</span></p></li><li><p><strong><em>Test-Driven Development: A Practical Guide</em></strong><br>
 <span class="small">David Astels. Prentice Hall, 2003</span></p></li><li><p><strong><em>Growing Object-Oriented Software, Guided by Tests</em></strong><br>
 <span class="small">Steve Freeman, Nat Pryce, 2009</span></p></li></ul></div>
 <div style="page-break-after: always;"></div></section>
-<section id="_sites"><h2>Sites</h2><div class="ulist"><ul><li><p>Cyber dojo: <a href="http://cyber-dojo.org/" class="bare">http://cyber-dojo.org/</a></p></li><li><p>CodingDojo: <a href="http://codingdojo.org/kata/" class="bare">http://codingdojo.org/kata/</a></p></li><li><p>Yosethegame: <a href="http://yosethegame.com/" class="bare">http://yosethegame.com/</a></p></li><li><p>Coding Game: <a href="https://www.codingame.com/start" class="bare">https://www.codingame.com/start</a></p></li></ul></div></section>
-<section id="_resources"><h2>Resources</h2><div class="ulist"><ul><li><p>Vidéos</p><div class="ulist"><ul><li><p><a href="https://www.youtube.com/watch?v=EW98_rwUQec">TDD : pour que votre code soit testable et testé!</a> - Xavier Nopre, 2019</p></li><li><p><a href="https://www.youtube.com/watch?v=mYGS1hhEHZc">Xavier Screen Cast #3, Premier test unitaire et intro TDD</a>, présentation du TDD à partir de 6mn</p></li><li><p><a href="https://www.youtube.com/watch?v=vBJM5pzBfhY">Test-Driven Development (TDD) in Python #1 - The 3 Steps of TDD</a> - Jason Gorman</p></li></ul></div></li><li><p>Autres</p><div class="ulist"><ul><li><p><a href="http://codemanship.co.uk/parlezuml/blog/?postid=1551">TDD</a> - Jason Gorman, 2016</p></li></ul></div></li></ul></div></section>
-<section id="_meetups"><h2>Meetups</h2><div class="ulist"><ul><li><p><a href="https://www.coderetreat.org" class="bare">https://www.coderetreat.org</a></p></li><li><p><a href="https://www.meetup.com/fr-FR/Craft-your-Skills/" class="bare">https://www.meetup.com/fr-FR/Craft-your-Skills/</a></p></li><li><p><a href="https://www.meetup.com/fr-FR/CARA-Dojo/" class="bare">https://www.meetup.com/fr-FR/CARA-Dojo/</a></p></li><li><p><a href="https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon" class="bare">https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon</a></p></li></ul></div></section>
-<section id="_pour_apprendre_le_tdd_il_faut_le_pratiquer"><h2>Pour apprendre le TDD, il faut le pratiquer</h2></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+<section id="_sites"><h2>Sites</h2><div class="ulist"><ul><li><p>Cyber dojo: <a href="http://cyber-dojo.org/" class="bare">http://cyber-dojo.org/</a></p></li><li><p>CodingDojo: <a href="http://codingdojo.org/kata/" class="bare">http://codingdojo.org/kata/</a></p></li><li><p>Yosethegame: <a href="http://yosethegame.com/" class="bare">http://yosethegame.com/</a></p></li><li><p>Coding Game: <a href="https://www.codingame.com/start" class="bare">https://www.codingame.com/start</a></p></li></ul></div>
+<div style="page-break-after: always;"></div></section>
+<section id="_vidéos"><h2>Vidéos</h2><div class="ulist"><ul><li><p><a href="https://www.youtube.com/watch?v=EW98_rwUQec">TDD : pour que votre code soit testable et testé!</a> - Xavier Nopre, 2019</p></li><li><p><a href="https://www.youtube.com/watch?v=mYGS1hhEHZc">Xavier Screen Cast #3, Premier test unitaire et intro TDD</a>, présentation du TDD à partir de 6mn</p></li><li><p><a href="https://www.youtube.com/watch?v=vBJM5pzBfhY">Test-Driven Development (TDD) in Python #1 - The 3 Steps of TDD</a> - Jason Gorman</p></li></ul></div>
+<div style="page-break-after: always;"></div></section>
+<section id="_meetups"><h2>Meetups</h2><div class="ulist"><ul><li><p><a href="https://www.coderetreat.org" class="bare">https://www.coderetreat.org</a></p></li><li><p><a href="https://www.meetup.com/fr-FR/Craft-your-Skills/" class="bare">https://www.meetup.com/fr-FR/Craft-your-Skills/</a></p></li><li><p><a href="https://www.meetup.com/fr-FR/CARA-Dojo/" class="bare">https://www.meetup.com/fr-FR/CARA-Dojo/</a></p></li><li><p><a href="https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon" class="bare">https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon</a></p></li></ul></div>
+<div style="page-break-after: always;"></div></section>
+<section id="_pour_apprendre_le_tdd_il_faut_le_pratique"><h2>Pour apprendre le TDD, il faut le pratique</h2></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
   if (slide.getAttribute('data-background-color')) return;
   // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
   if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
