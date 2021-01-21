@@ -13,10 +13,10 @@
 //
 // <<<
 
+ifndef::backend-pdf[]
 [%notitle]
 == TDD
 
-ifndef::backend-pdf[]
 image::schema.svg[background,size=600px]
 
 *Test*
@@ -27,11 +27,12 @@ image::schema.svg[background,size=600px]
 endif::[]
 
 ifdef::backend-pdf[]
-*Test*
-*Driven*
-*Development*
-endif::[]
+== Test Driven Development
 
+image::schema.svg[align="center", width="500%"]
+
+<<<
+endif::[]
 
 <<<
 
