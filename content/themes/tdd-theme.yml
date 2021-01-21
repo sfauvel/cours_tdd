@@ -1,0 +1,17 @@
+
+extends: ../../../asciidoctor/themes/slide
+
+table:
+  border_width: 0
+
+footer:
+  recto:
+    right:
+      content: '{date}'
+    center:
+      content: '{prez_title}'
+  verso:
+    right:
+      content: '{date}'
+    center:
+      content: '{prez_title}'

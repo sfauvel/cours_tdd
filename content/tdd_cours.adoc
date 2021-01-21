@@ -1,10 +1,7 @@
 
 //= Test Driven Development
 
-:imagesdir: ./images
-:customcss: ./css/fullscreen.css
-:prez_title: Test Driven Development
-:date: 17/01/2021
+include::common.adoc[]
 
 // Pour avoir un comportement spécifique sur le PDF
 // ifdef::backend-pdf[]
@@ -54,7 +51,7 @@ endif::[]
 
 <<<
 
-== TDD
+=== TDD
 
 * Le sujet principal n’est pas le test
 ifdef::backend-pdf[]
@@ -73,7 +70,7 @@ endif::[]
 
 <<<
 
-== Kent Beck
+=== Kent Beck
 
 [cols='1,2,4a']
 |====
@@ -93,7 +90,7 @@ endif::[]
 
 <<<
 
-== Préface
+=== Préface
 
 [cols='2,4a']
 |====
@@ -114,14 +111,14 @@ endif::[]
 
 <<<
 
-== TDD mantra
+=== TDD mantra
 
 image::mantra.png[width=600, align="center"]
 
 ifdef::backend-pdf[]
 <<<
 
-== TDD mantra
+=== TDD mantra
 
 * Rouge: Ecrire un test qui échoue et qui prouve qu'il faut modifier le code
 * Vert: Faire passer le test avec une implémentation rapide
@@ -131,14 +128,14 @@ endif::[]
 
 <<<
 
-== Un exemple
+=== Un exemple
 * Une calculatrice gérant l’addition de plusieurs
 entiers
 
 
 <<<
 
-== Concepts clés
+=== Concepts clés
 
 * Ecrire un test et s’assurer qu’il échoue
 ** Les valeurs en « dur » orientent le test suivant
@@ -151,7 +148,7 @@ entiers
 
 <<<
 
-== Questions
+=== Questions
 
 image::questions.png[align=center, width=500]
 
@@ -175,7 +172,7 @@ endif::[]
 
 <<<
 
-== Rétrospective
+=== Rétrospective
 
 image::retrospective.png[align=center, width=800]
 
@@ -210,7 +207,7 @@ endif::[]
 <<<
 
 ifndef::backend-pdf[]
-== Bonnes pratiques de test
+=== Bonnes pratiques de test
 
 * Indépendance
 * Rapidité d’exécution
@@ -222,7 +219,7 @@ endif::[]
 
 ifdef::backend-pdf[]
 
-== Bonnes pratiques de test
+=== Bonnes pratiques de test
 
 * *Indépendance*: Les tests peuvent être exécuté tout ou partie et sans ordre spécifique.
 * *Rapidité d’exécution*: Pour être joués en permanence, ils doivent être *très* rapides.
@@ -230,7 +227,7 @@ ifdef::backend-pdf[]
 
 <<<
 
-== Bonnes pratiques de test
+=== Bonnes pratiques de test
 
 * *Lisibilité*: On doit comprendre ce qui se passe uniquement en lisant le test.
 * *Tester une seule chose à la fois*: un test en échec ne doit avoir qu'une raison d'échouer.
@@ -247,7 +244,7 @@ endif::[]
 
 <<<
 
-== Outillage
+=== Outillage
 
 * Framework de tests: Junit, TestNG
 * Outils de build: Maven, Ant
@@ -274,7 +271,7 @@ endif::[]
 
 <<<
 
-== Spécification / Documentation
+=== Spécification / Documentation
 
 ifdef::backend-pdf[]
 Les tests sont avant tout une suite d'exemples du fonctionnement de l'application.
@@ -300,7 +297,7 @@ endif::[]
 
 <<<
 
-== Concepts agiles
+=== Concepts agiles
 
 ifdef::backend-pdf[]
 Le TDD permet de mettre oeuvre une certaines philosophie portée par l'agilité.
@@ -323,7 +320,7 @@ endif::[]
 
 <<<
 
-== Feedback
+=== Feedback
 
 ifdef::backend-pdf[]
 Le TDD permet de développer progressivement une solution, tout en sachant à tout moment où on en est.
@@ -350,7 +347,7 @@ endif::[]
 
 <<<
 
-== Mesure de la couverture
+=== Mesure de la couverture
 
 ifdef::backend-pdf[]
 La couverture de code permet d'identifier les lignes de codes exécutées et de mettre en évidence des lacunes.
@@ -373,7 +370,7 @@ endif::[]
 
 <<<
 
-== Qualité de code
+=== Qualité de code
 
 ifdef::backend-pdf[]
 Le TDD rend possible la modification du code de manière sécurisée.
@@ -398,7 +395,7 @@ endif::[]
 
 <<<
 
-== BDD: Behavior Driven Development
+=== BDD: Behavior Driven Development
 
 * Continuité du TDD
 * Encore plus orienté vers le métier
@@ -440,11 +437,11 @@ endif::[]
 
 <<<
 
-include::tdd_atelier.adoc[]
+include::tdd_atelier.adoc[leveloffset=+1]
 
 <<<
 
-== Rétrospective
+=== Rétrospective
 
 image::retrospective.png[align=center, width=800]
 
@@ -464,7 +461,7 @@ endif::[]
 
 <<<
 
-== Bénéfices
+=== Bénéfices
 
 * Composants prévus pour être testés
 * Composants prévus pour être réutilisés
@@ -475,14 +472,14 @@ endif::[]
 
 <<<
 
-== Bénéfices
+=== Bénéfices
 
 * Le tests ne sont plus une option "lorsqu’il reste du temps"
 * On ne perd pas du temps à écrire les tests, on gagne du temps pour écrire le code
 
 <<<
 
-== Références
+=== Références
 
 [bibliography]
 
@@ -503,7 +500,7 @@ endif::[]
 
 <<<
 
-== Sites
+=== Sites
 
 * Cyber dojo: http://cyber-dojo.org/
 // IDE + Enoncés. Possibilité de travailler en groupe
@@ -516,7 +513,7 @@ endif::[]
 
 <<<
 
-== Vidéos
+=== Vidéos
 // /home/sfauvel/Downloads/TDD - Agile Grenoble - 25_11_2020 - Diffusion.pdf
 
 * link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] - Xavier Nopre, 2019
@@ -530,7 +527,7 @@ endif::[]
 
 <<<
 
-== Meetups
+=== Meetups
 
 * https://www.coderetreat.org
 * https://www.meetup.com/fr-FR/Craft-your-Skills/
@@ -539,5 +536,14 @@ endif::[]
 
 <<<
 
-== Pour apprendre le TDD, il faut le pratique
+[%notitle]
+== Pour apprendre le TDD, il faut le pratiquer
 
+ifndef::backend-pdf[]
+[.big]
+****
+Pour apprendre le TDD,
+
+il faut le pratiquer
+****
+endif::[]
