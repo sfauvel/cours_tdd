@@ -63,7 +63,7 @@ image:gameoflife.png[width=1000]
 * Les points valent 15, 30, 40
 * Au delà de 40,
 ** le premier avec 2 points d'écart gagne le jeu: "Game [A ou B]"
-** s'il n'y a pas 2 points d'écart, on affiche "Avantage [A ou B]"
+** s'il n'y a pas 2 points d'écart, on affiche "Advantage [A ou B]"
 ** sil y a égalité, on affiche "Deuce"
 
 _Exemples_
