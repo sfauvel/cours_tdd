@@ -517,6 +517,7 @@ endif::[]
 // /home/sfauvel/Downloads/TDD - Agile Grenoble - 25_11_2020 - Diffusion.pdf
 
 * link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] - Xavier Nopre, 2019
+// link:https://www.youtube.com/watch?v=9xQVzmXHlSg[talkTDD] - Xavier Nopre, 2012
 * link:https://www.youtube.com/watch?v=mYGS1hhEHZc[Xavier Screen Cast #3, Premier test unitaire et intro TDD], présentation du TDD à partir de 6mn
 //* https://xnopre.blogspot.com/ : Le blog de Xavier Nopre qui va un peu plus loin
 //* https://www.youtube.com/watch?v=zerAfNIcrZM&feature=emb_logo, https://artisandeveloppeur.fr/arreter-de-creer-des-regressions-grace-au-tdd-avec-jean-pierre-lambert/ Arrêter de créer des régressions grâce au TDD avec Jean-Pierre Lambert

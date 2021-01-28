@@ -59,12 +59,25 @@ image:gameoflife.png[width=1000]
 
 == Tennis score
 
-* Afficher le score d'un match de tennis
-* On donne une suite indiquant qui a marqué chaque point et on retourne le score
-* Exemples
-** AAAB => 40 - 15
-** AABB => 30A
-** BBBB => Jeu B
+* Afficher le score d'un jeu au tennis à partir d'une liste indiquant qui a marqué chaque point
+* Les points valent 15, 30, 40
+* Au delà de 40,
+** le premier avec 2 points d'écart gagne le jeu: "Game [A ou B]"
+** s'il n'y a pas 2 points d'écart, on affiche "Avantage [A ou B]"
+** sil y a égalité, on affiche "Deuce"
+
+_Exemples_
+[cols="1,1,2"]
+|====
+| AAAB => 40 - 15 | BBBB => Game B | ABABABA => Advantage A
+|====
+
+
+//AAABBBAB => 40 partout
+//AAABBBABA => AD A
+//AAABBBABAB => Egalité
+
+
 
 //** Entrée: AAABABBAB...
 //** Sortie:
