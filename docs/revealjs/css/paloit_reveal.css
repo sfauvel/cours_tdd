@@ -393,6 +393,11 @@ body {
   right: 30px;
 }
 
+.logo-header-midiserudits {
+  position:absolute;
+  right: 0px;
+}
+
 /******************************/
 .reveal section.background-right {
   margin-left:500px;
@@ -403,3 +408,4 @@ body {
 .reveal .backgrounds .background-right {
   width:500px !important;
 }
+

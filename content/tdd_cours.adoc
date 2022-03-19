@@ -511,6 +511,7 @@ endif::[]
 * Coding Game: https://www.codingame.com/start
 // Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
 
+// https://tddmanifesto.com/
 <<<
 
 === Vidéos
