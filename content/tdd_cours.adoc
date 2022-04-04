@@ -400,7 +400,7 @@ endif::[]
 * Continuité du TDD
 * Encore plus orienté vers le métier
 * Rédaction en collaboration avec le métier
-* Syntaxe Gerkhin: Given / When / Then
+* Syntaxe Gherkin: Given / When / Then
 
 ifndef::backend-pdf[]
 [cols="1,1a,1"]
