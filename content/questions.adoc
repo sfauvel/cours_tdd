@@ -1,0 +1,48 @@
+= Déroulement de la séance
+
+https://sfauvel.github.io/cours_tdd/
+http://cyber-dojo.org/
+
+
+8:05: Début
+??? : Démo
+8:50: Lancement FizzBuzz
+9:10: Debrief
+9:20: Pause
+9:30
+
+10:50 Pause
+11:00 
+
+12:20 Fin
+
+== Questions posés par les étudiants
+
+Difficile sur des cas simples. On voit on l'on va.
+
+Compliqué de ne pas déjà développer les classes.
+
+Un peu plus long.
+
+Interface graphique ?
+
+Difficile de ne pas avoir la structure de l'objet en amont. 
+
+=== Compléments sur exercices
+
+* Pour les nobmres contenant 3 ou 5, doit on mettre Fizz et Buzz dans l'ordre d'apparition ? 
+
+=== Sur des gros projets de plusieurs jours ? Je ne vais pas faire "du" code que je vais jeter en le refactorant ? 
+
+
+
+=== Kata avec injection
+
+Système de log
+Connexion base de données (lecture/écriture)
+
+Calcul de facture
+
+On va chercher une liste de commande (article, prix, nombre) dans un base de donnée
+On retourne le prix final
+On enrichi un 
