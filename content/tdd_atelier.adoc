@@ -77,7 +77,25 @@ _Exemples_
 //AAABBBABA => AD A
 //AAABBBABAB => Egalité
 
+<<<
 
+== Tetris
+
+* Afficher l'état
+* Déplacer une pièce (bas, droite, gauche)
+* Détecter les mouvements impossibles
+* Faire tourner une pièce
+* Supprimer les lignes complètes
+
+_Exemples_
+----
+     Descendre                   Tourner                     Ligne
+|  X  |      |     |       |  X  |      |   X |       |     |      |     |
+|     |  =>  |  X  |       | XXX |  =>  |  XX |       |  XXX|  =>  |     |
+|     |      |     |       |     |      |   X |       |XXXXX|      |  XXX|
+|     |      |     |       |     |      |     |       |X X  |      |X X  |
+|-----|      |-----|       |-----|      |-----|       |-----|      |-----|
+----
 
 //** Entrée: AAABABBAB...
 //** Sortie:

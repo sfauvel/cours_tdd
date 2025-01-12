@@ -434,6 +434,7 @@ endif::[]
 //* Bank OCR
 * How much water ?
 * Tennis score
+* Tetris
 
 <<<
 
@@ -481,10 +482,12 @@ endif::[]
 
 === Références
 
+// Livres
+
 [bibliography]
 
-- *_link:http://codemanship.co.uk/parlezuml/blog/?postid=1551[TDD]_* +
-[.small]#Jason Gorman, 2016#
+// - *_link:https://codemanship.wordpress.com/category/tdd/[TDD]_* +
+// [.small]#Jason Gorman, 2016#
 
 - *_Extreme programming explained: embrace change_* +
 [.small]#Kent Beck, Addison-Wesley, 1999#
@@ -498,43 +501,87 @@ endif::[]
 - *_Growing Object-Oriented Software, Guided by Tests_* +
 [.small]#Steve Freeman, Nat Pryce, 2009#
 
+- TDD: https://codemanship.wordpress.com/category/tdd/ +
+[.small]#Jason Gorman#
+
 <<<
 
-=== Sites
-
-* Cyber dojo: http://cyber-dojo.org/
-// IDE + Enoncés. Possibilité de travailler en groupe
-* CodingDojo: http://codingdojo.org/kata/
-// Enoncés
-* Yosethegame: http://yosethegame.com/
-// Apprendre le TDD en faisant passer les tests petit à petit
-* Coding Game: https://www.codingame.com/start
-// Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
-
-// https://tddmanifesto.com/
-<<<
+// === Sites
+// 
+// // Sites web parlant du TDD
+// 
+// * TDD: https://codemanship.wordpress.com/category/tdd/ +
+// [.small]#Jason Gorman#
+// * https://blog.octo.com/le-double-cycle-tdd
+// // * Cyber dojo: http://cyber-dojo.org/
+// // IDE + Enoncés. Possibilité de travailler en groupe
+// // * CodingDojo: http://codingdojo.org/kata/
+// // Enoncés
+// // * Yosethegame: http://yosethegame.com/
+// // Apprendre le TDD en faisant passer les tests petit à petit
+// // * Coding Game: https://www.codingame.com/start
+// // Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
+// 
+// // https://tddmanifesto.com/
+// <<<
 
 === Vidéos
 // /home/sfauvel/Downloads/TDD - Agile Grenoble - 25_11_2020 - Diffusion.pdf
 
-* link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] - Xavier Nopre, 2019
+- link:https://www.youtube.com/watch?v=EW98_rwUQec[TDD : pour que votre code soit testable et testé!] +
+[.small]#Xavier Nopre, 2019#
+
+- link:https://www.youtube.com/watch?v=mYGS1hhEHZc[Xavier Screen Cast 3, Premier test unitaire et intro TDD] +
+[.small]#présentation du TDD à partir de 6mn#
+
+- link:https://www.youtube.com/watch?v=vBJM5pzBfhY[Test-Driven Development (TDD) in Python 1 - The 3 Steps of TDD] +
+[.small]#Jason Gorman#
+
+- link:https://www.youtube.com/watch?v=h-4i5N89TUI[Unit Testing Is The BARE MINIMUM] +
+[.small]#Dave Farley#
+
+
 // link:https://www.youtube.com/watch?v=9xQVzmXHlSg[talkTDD] - Xavier Nopre, 2012
-* link:https://www.youtube.com/watch?v=mYGS1hhEHZc[Xavier Screen Cast #3, Premier test unitaire et intro TDD], présentation du TDD à partir de 6mn
+
+
 //* https://xnopre.blogspot.com/ : Le blog de Xavier Nopre qui va un peu plus loin
 //* https://www.youtube.com/watch?v=zerAfNIcrZM&feature=emb_logo, https://artisandeveloppeur.fr/arreter-de-creer-des-regressions-grace-au-tdd-avec-jean-pierre-lambert/ Arrêter de créer des régressions grâce au TDD avec Jean-Pierre Lambert
 //* https://www.youtube.com/watch?v=nbSaq_ykOl4: Test-Driven Development (TDD) par l'exemple, et en français ! (FizzBuzz mais le déroulement est discutable)
-* link:https://www.youtube.com/watch?v=vBJM5pzBfhY[Test-Driven Development (TDD) in Python #1 - The 3 Steps of TDD] - Jason Gorman
+
+// * link:https://www.youtube.com/@EmilyBache-tech-coach/search?query=TDD[] (TDD) - Emily Bache
+// * link:https://www.youtube.com/@Codemanship/search?query=Test-Driven%20Development[Test-Driven Development] - Jason Gorman
+
+// * link:https://www.youtube.com/watch?v=qu9p6yEURYI[C'est quoi le TDD ? (TEST DRIVEN DEVELOPMENT)]
+// * link:https://www.youtube.com/watch?v=wMY5FE59rkI[Qu'est ce que le TDD ?] - Artisan Développeur
+// * link:https://www.youtube.com/watch?v=wbZ6jWmRY14[Comment faire du TDD ?] - Artisan Développeur
+
+// * link:https://www.youtube.com/watch?v=k7_WBqd6C0Y[TDD - test driven development - La Minute Agile Scrum #91] - La Minute Agile - Agile, Scrum, AI
+
 
 // https://vimeo.com/34732838 : Game of Life Kata by Emily Bache in Python 2011
 
 <<<
 
-=== Meetups
+=== Pratiquer
 
-* https://www.coderetreat.org
-* https://www.meetup.com/fr-FR/Craft-your-Skills/
-* https://www.meetup.com/fr-FR/CARA-Dojo/
-* https://www.meetup.com/fr-FR/Software-Craftsmanship-Lyon
+// Pour pratiquer
+
+* Code Retreat: https://www.coderetreat.org
+// * https://www.meetup.com/fr-FR/Craft-your-Skills/
+// * https://www.meetup.com/fr-FR/CARA-Dojo/
+* Meetup: https://www.meetup.com/fr-FR/software-craftsmanship-lyon/
+
+* Cyber dojo: http://cyber-dojo.org/
+// IDE + Enoncés. Possibilité de travailler en groupe
+* CodingDojo: http://codingdojo.org/kata/
+// Enoncés
+// * Yosethegame: https://github.com/yosethegame/yosethegame
+// Apprendre le TDD en faisant passer les tests petit à petit
+// * Coding Game: https://www.codingame.com/start
+// Développer avec des tests à faire passer. Nombreux langages. Pas vraiment TDD
+
+// https://github.com/luontola/tdd-tetris-tutorial
+// https://www.youtube.com/watch?v=fmddhJQIIcc&list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM&index=1
 
 <<<
 
